@@ -1,7 +1,10 @@
 package Chapter_02_OOP.Define_Class;
 
+import java.util.ArrayList;
+
 public class Company {
     private String companyName;
+    private ArrayList<Employee> employees = new ArrayList<>();
 
     public Company() {
         this.companyName = "";
@@ -26,7 +29,17 @@ public class Company {
         this.companyName = companyName;
     }
 
+    public ArrayList<Employee> getEmployees() {
+        return employees;
+    }
+
+    public void addEmployee(Employee employee) {
+        employees.add(employee);
+    }
+
     public void clear() {
         this.companyName = "";
     }
+
+
 }
