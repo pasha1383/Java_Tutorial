@@ -16,5 +16,9 @@ public class VariablesDemo {
         // GRAVITY = 10.0; // This would cause a compilation error
 
         System.out.println("Speed is: " + speed);
+        System.out.println(smallNum);
+        System.out.println(largeNum);
+        System.out.println(pi);
+        System.out.println(GRAVITY);
     }
 }
